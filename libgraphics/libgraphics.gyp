@@ -32,6 +32,7 @@
 				'src/cachetable.cpp',
 				'src/context.cpp',
 				'src/coretext-skia.cpp',
+				'src/directwrite-skia.cpp',
 				'src/image.cpp',
 				'src/lnxtext.cpp',
 				'src/harfbuzztext.cpp',
@@ -40,7 +41,6 @@
 				'src/region.cpp',
 				'src/spread.cpp',
 				'src/utils.cpp',
-				'src/w32text.cpp',
 			],
 			
 			'conditions':
@@ -53,6 +53,15 @@
 							'src/coretext-skia.cpp',
 						],
 					},
+				],
+				[
+                                        'OS != "win"',
+                                        {
+                                                'sources!':
+                                                [
+                                                        'src/directwrite-skia.cpp',
+                                                ],
+                                        },
 				],
 				[
 					'OS != "android" and OS != "emscripten"',
