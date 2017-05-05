@@ -373,6 +373,7 @@
 						
 						'ldflags':
 						[
+							'-static-libstdc++',
 							# Helpful for catching build problems
 							'-Wl,-no-undefined',
 							'-Wl,-T,$(abs_srcdir)/engine/standalone-android.link',
