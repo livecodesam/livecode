@@ -47,10 +47,10 @@ Description:
 Use the <answer color> <command> to select a custom color.
 
 The <answer color> <command> displays a <dialog box> where the user can
-select a color. (This dialog box is displayed by the operating system,
+select a color. (This <dialog box> is displayed by the operating system,
 not by LiveCode.)
 
-If you specify a <startingColor>, the dialog box displays that color by
+If you specify a <startingColor>, the <dialog box> displays that color by
 default. 
 
 The color is returned in the form of three comma-separated integers
@@ -58,8 +58,8 @@ between zero and 255, specifying the level of each of red, green, and
 blue. This format can be used directly to set any color property.
 
 Changes:
-The option to specify a startingColor was introduced in version 1.1.1.
-In previous versions, the dialog box displayed white by default.
+The option to specify a <startingColor> was introduced in version 1.1.1.
+In previous versions, the <dialog box> displayed white by default.
 
 References: answer (command), function (control structure),
 result (function), colorNames (function), dialog box (glossary),
