@@ -896,7 +896,7 @@ the <itemCount>, the remaining segments' names are set to empty.
 When you set the <itemNames> to a string that that has more names than
 the <itemCount>, the extra names are ignored.
 
-Related: itemCount (property>, itemLabels (property),
+Related: itemCount (property), itemLabels (property),
 	hilitedItemNames (Property)
 **/
 
@@ -981,8 +981,8 @@ When you set the <itemIcons> to a string that has more icon names than
 the <itemCount>, the extra icons are ignored.
 
 Related: itemCount (property), itemStyle (property),
-	itemHilitedIcons (property), foreColor (property),
-	hilitedItems (property)
+	foreColor (property), hilitedItems (property), 
+	hilitedItemIcons (property)
 **/
 property itemIcons get getSegmentIcons set setSegmentIcons
 metadata itemIcons.label is "Segment Icons"
@@ -1331,7 +1331,7 @@ Syntax: get the cornerRadius of <widget>
 Summary: The corner radius of the widget
 
 Description:
-The cornerRadius is the radius (in pixels) of the corner curve of the <widget>. The default value is usually suitable for horizantal orientations, however with a vertical orientation, depending on the size of the labels, you may wish to adjust.
+The cornerRadius is the radius (in pixels) of the corner curve of the widget. The default value is usually suitable for horizantal orientations, however with a vertical orientation, depending on the size of the labels, you may wish to adjust.
 **/
 property cornerRadius get mRadius set setCornerRadius
 metadata cornerRadius.editor is "com.livecode.pi.number"
